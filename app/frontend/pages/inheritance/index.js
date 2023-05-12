@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 
 import { useAccount, useContractRead } from "wagmi";
 import { ethers } from "ethers";
-import {  contractAbi } from "../../utils/constants";
+import {  contractAbi, contractAddress } from "../../utils/constants";
 import { Header } from "../../components/header";
 
-const contractAddress = "0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD";
 const beneficiaryAddress = "0x42e8d1BBB613dc63A6fDbF39B0b016E78dF4E4f6";
 
 function Index() {
@@ -32,10 +31,6 @@ function Index() {
     }
   };
 
-
-  // useEffect(() => {
-  //   getMyNFTs();
-  // }, [address, isConnected]);
   useEffect(() => {
     // console.log(`LegacyNFTs[${nftId}]: ${nfts?.toString()}`)
     // getMyNFTs();
@@ -43,6 +38,7 @@ function Index() {
     console.log(myNFTs)
     const amount = myNFTs?.amount?.toString();
     const tokenId = myNFTs?.tokenId?.toNumber();
+    console.log(amount);
     if (tokenId == 0){ setTokenType("ERC20")}
     else {
       if (amount == 0) setTokenType("ERC721");
@@ -100,7 +96,6 @@ function Index() {
                     <h3 className="justify-self-center">{tokenType}</h3>
                     <button
                       className="justify-self-center text-white bg-black hover:bg-red-500 text-bold rounded-full px-6 sm:w-auto"
-                      onClick={() => removeLegacy()}
                     >
                       X
                     </button>

@@ -83,9 +83,9 @@ const legacyAddModal = () => {
                 onChange={(e) => { setTokenStandard(e.target.value) }}
                 className="select border border-gray-400 rounded-xl w-full px-3 py-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
               >
-                <option value="ERC20">FTM Token</option>
-                <option value="ERC721">FTM NFTs</option>
-                <option value="ERC1155">ERC1155(FTM)</option>
+                <option value="ERC20">ERC</option>
+                <option value="ERC721"> NFTs </option>
+                <option value="ERC1155">ERC1155</option>
               </select>
             </div>
             <div className="mb-2 flex flex-col">

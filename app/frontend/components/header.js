@@ -61,18 +61,11 @@ export const Header = () => {
         <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
           <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <a href="/" class="flex items-center">
-              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-purple-600">
-                INXASE
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-yellow-500">
+                BQuest
               </span>
             </a>
             <div class="flex items-center lg:order-2">
-              <a
-                onClick={() => {userWallet ? logout() : login()}}
-                class="text-gray-800 cursor-pointer dark:text-white hover:bg-purple-600 hover:text-white focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"
-              >
-                {userWallet ? userWallet : "Login With Unstoppable"}
-              </a>
-
               <ConnectButton />
 
               <button
@@ -117,7 +110,7 @@ export const Header = () => {
                 <li>
                   <a
                     href="/"
-                    class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                    class="block py-2 pl-3 pr-4 text-white bg-yellow-400 rounded lg:bg-transparent lg:text-yellow-400 lg:p-0 dark:text-white"
                     aria-current="page"
                   >
                     Home
@@ -126,7 +119,7 @@ export const Header = () => {
                 <li>
                   <a
                     href="/dashboard"
-                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Dashboard
                   </a>
@@ -135,7 +128,7 @@ export const Header = () => {
                 <li>
                   <a
                     href="/inheritance"
-                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Check Inherit
                   </a>
@@ -143,7 +136,7 @@ export const Header = () => {
                 <li>
                   <a
                     href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Contact
                   </a>

@@ -62,7 +62,7 @@ const checkIn = () => {
       <button
         onClick={handleClick}
         disabled={checkingIn}
-        className="bg-purple-700 hover:bg-blue-700 disabled:bg-blue-400 text-white text-bold rounded-full px-12 py-2 sm:w-auto mt-2 mb-12"
+        className="bg-green-700 hover:bg-yellow-600 disabled:bg-yellow-400 text-white text-bold rounded-full px-12 py-2 sm:w-auto mt-2 mb-12"
       >
         Check In
       </button>
