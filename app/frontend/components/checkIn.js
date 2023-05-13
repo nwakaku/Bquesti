@@ -36,7 +36,7 @@ const checkIn = () => {
 
   const dateLookup = (dayOfYear) => {
     const today = new Date();
-    const diff = dayOfYear - Math.floor((today) / (24 * 60 * 60 * 1000)) % 365;
+    let diff = dayOfYear - Math.floor((today) / (24 * 60 * 60 * 1000)) % 365;
     if (diff < 0) diff += 365;
     today.setDate(today.getDate() + diff)
     return today
