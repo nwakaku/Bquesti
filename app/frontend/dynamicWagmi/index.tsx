@@ -15,6 +15,7 @@ import {
   trustWallet,
   walletConnectWallet,
 } from "@rainbow-me/rainbowkit/wallets";
+import * as dotenv from 'dotenv'
 
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
@@ -27,11 +28,13 @@ import { ParticleNetwork } from "@particle-network/auth";
 
 import { particleWallet } from "@particle-network/rainbowkit-ext";
 
+dotenv.config()
+
 function DynamicWagmi(props: any) {
   const particle = new ParticleNetwork({
-    projectId: "cb99c115-33fc-4838-a6ac-0e99889cd3aa",
-    clientKey: "cGfmojeOILJ4kDhGojjOsUyVBjvpuG1ilmflzrwI",
-    appId: "b6276d3d-482f-4360-b603-3dac25908935",
+    projectId: process.env.NEXT_PUBLIC_PROJECT_ID as string,
+    clientKey: process.env.NEXT_PUBLIC_CLIENT_KEY as string,
+    appId: process.env.NEXT_PUBLIC_APP_ID as string,
   });
   const { chains, provider, webSocketProvider } = configureChains(
     [bscTestnet],

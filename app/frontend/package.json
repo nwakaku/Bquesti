@@ -16,6 +16,7 @@
     "@unstoppabledomains/resolution": "^8.3.3",
     "@wagmi/chains": "^0.2.8",
     "axios": "^1.2.1",
+    "dotenv": "^16.0.3",
     "ethers": "^5.7.2",
     "next": "13.0.6",
     "react": "18.2.0",

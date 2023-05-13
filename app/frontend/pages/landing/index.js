@@ -8,7 +8,7 @@ const index = () => {
           <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <a href="#" class="flex items-center">
               <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-yellow-400">
-                BQuest
+                BQuesti
               </span>
             </a>
             <div class="flex items-center lg:order-2">
@@ -113,7 +113,7 @@ const index = () => {
               Beneficiary system <br /> for digital assets
             </h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-              BQuest lets you set your assets to be distributed upon a set date
+              BQuesti lets you set your assets to be distributed upon a set date
               thereby recovering your funds .
             </p>
             <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
@@ -607,7 +607,7 @@ const index = () => {
                 99.99% uptime
               </h3>
               <p class="font-light text-gray-500 dark:text-gray-400">
-                For BQuest, with zero maintenance downtime
+                For BQuesti, with zero maintenance downtime
               </p>
             </div>
             <div>
@@ -643,7 +643,7 @@ const index = () => {
                 100+ countries
               </h3>
               <p class="font-light text-gray-500 dark:text-gray-400">
-                Have used BQuest to create functional websites
+                Have used BQuesti to create functional websites
               </p>
             </div>
             <div>
@@ -683,7 +683,7 @@ const index = () => {
             </svg>
             <blockquote>
               <p class="text-xl font-medium text-gray-900 md:text-2xl dark:text-white">
-                "BQuest is just awesome. It contains tons of predesigned
+                "BQuesti is just awesome. It contains tons of predesigned
                 components and pages starting from login screen to complex
                 dashboard."
               </p>
@@ -729,7 +729,7 @@ const index = () => {
                   aria-expanded="true"
                   aria-controls="accordion-flush-body-1"
                 >
-                  <span>Can I use BQuest in open-source projects?</span>
+                  <span>Can I use BQuesti in open-source projects?</span>
                   <svg
                     data-accordion-icon=""
                     class="w-6 h-6 rotate-180 shrink-0"
@@ -752,7 +752,7 @@ const index = () => {
               >
                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    BQuest lets you set your assets to be distributed upon a set
+                    BQuesti lets you set your assets to be distributed upon a set
                     date thereby recovering your funds .
                   </p>
                   <p class="text-gray-500 dark:text-gray-400">
@@ -797,7 +797,7 @@ const index = () => {
               >
                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    BQuest is first conceptualized and designed using the Figma
+                    BQuesti is first conceptualized and designed using the Figma
                     software so everything you see in the library has a design
                     equivalent in our Figma file.
                   </p>
@@ -810,7 +810,7 @@ const index = () => {
                       Figma design system
                     </a>{" "}
                     based on the utility classes from Tailwind CSS and
-                    components from BQuest.
+                    components from BQuesti.
                   </p>
                 </div>
               </div>
@@ -823,7 +823,7 @@ const index = () => {
                   aria-controls="accordion-flush-body-3"
                 >
                   <span>
-                    What are the differences between BQuest and Tailwind UI?
+                    What are the differences between BQuesti and Tailwind UI?
                   </span>
                   <svg
                     data-accordion-icon=""
@@ -847,14 +847,14 @@ const index = () => {
               >
                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    The main difference is that the core components from BQuest
+                    The main difference is that the core components from BQuesti
                     are open source under the MIT license, whereas Tailwind UI
-                    is a paid product. Another difference is that BQuest relies
+                    is a paid product. Another difference is that BQuesti relies
                     on smaller and standalone components, whereas Tailwind UI
                     offers sections of pages.
                   </p>
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    However, we actually recommend using both BQuest, BQuest
+                    However, we actually recommend using both BQuesti, BQuesti
                     Pro, and even Tailwind UI as there is no technical reason
                     stopping you from using the best of two worlds.
                   </p>
@@ -867,7 +867,7 @@ const index = () => {
                         href="#"
                         class="text-yellow-400 dark:text-green-500 hover:underline"
                       >
-                        BQuest Pro
+                        BQuesti Pro
                       </a>
                     </li>
                     <li>
@@ -912,14 +912,14 @@ const index = () => {
               >
                 <div class="py-5 border-b border-gray-200 dark:border-gray-700">
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    The main difference is that the core components from BQuest
+                    The main difference is that the core components from BQuesti
                     are open source under the MIT license, whereas Tailwind UI
-                    is a paid product. Another difference is that BQuest relies
+                    is a paid product. Another difference is that BQuesti relies
                     on smaller and standalone components, whereas Tailwind UI
                     offers sections of pages.
                   </p>
                   <p class="mb-2 text-gray-500 dark:text-gray-400">
-                    However, we actually recommend using both BQuest, BQuest
+                    However, we actually recommend using both BQuesti, BQuesti
                     Pro, and even Tailwind UI as there is no technical reason
                     stopping you from using the best of two worlds.
                   </p>
@@ -932,7 +932,7 @@ const index = () => {
                         href="#"
                         class="text-yellow-400 dark:text-green-500 hover:underline"
                       >
-                        BQuest Pro
+                        BQuesti Pro
                       </a>
                     </li>
                     <li>
@@ -959,7 +959,7 @@ const index = () => {
               Start your free trial today
             </h2>
             <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
-              Try BQuest Platform for 30 days. No credit card required.
+              Try BQuesti Platform for 30 days. No credit card required.
             </p>
             <a
               href="#"

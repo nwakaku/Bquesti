@@ -33,7 +33,7 @@ struct Legacy {
 // testam3nt
 // Inh3rit
 
-contract Incase is
+contract BQuesti is
     Ownable,
     ReentrancyGuard,
     ERC721,
@@ -111,7 +111,7 @@ contract Incase is
     );
 
     /** @dev Settings up constructor to implement NFT token name */
-    constructor() ERC721("Incase", "Inc") {
+    constructor() ERC721("BQuesti", "BQT") {
         // We start NFT IDs in 1
         _tokenIdCounter.increment();
     }
@@ -376,7 +376,7 @@ contract Incase is
         override
         returns (string memory)
     {
-        require(_exists(tokenId), "Incase: Non-Existent Token ID");
+        require(_exists(tokenId), "BQuesti: Non-Existent Token ID");
         Legacy storage l = legacyNFTs[tokenId];
         return
             TokenURIDescriptor.tokenURI(

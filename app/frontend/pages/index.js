@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>INCASE</title>
-        <meta name="description" content="Incase" />
+        <title>Bquesti</title>
+        <meta name="description" content="Bquesti" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Landing />

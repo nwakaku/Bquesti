@@ -40,12 +40,12 @@ async function main() {
  
 
 
-  const Template = await hre.ethers.getContractFactory("Incase");
+  const Template = await hre.ethers.getContractFactory("Bquesti");
   const contract = await Template.deploy();
 
   await contract.deployed();
 
-  console.log("Incase Contract deployed to:", contract.address);
+  console.log("Bquesti Contract deployed to:", contract.address);
   const receipt2 = await contract.deployTransaction.wait();
   console.log("gasUsed:" , receipt2.gasUsed);
   

@@ -1,62 +1,126 @@
-# Incase
 
-Set beneficiaries to the assets in your wallet.  FTM tokens, ERC-115 or FTM NFTs will automatically transfer upon death or loss of keys.
+# BQuesti
 
-Use it was a living will or as a backup for a lost private keys, trust that your assests are not lost forever in your wallet
+Documentation for "BQuesti" DApp
 
-Successfully verified contract Incase on ftmscan.
-https://testnet.ftmscan.com/address/0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD#code
+## Introduction
 
- [Video Demo](https://youtu.be/78IzqqqIo4o) | 
- [Live Site](https://incase.vercel.app) | 
+"Bquesti" is a decentralized application (DApp) built on the Binance blockchain that allows users to create a will and transfer their assets to their beneficiaries automatically upon their death. The DApp supports the transfer of BEP-20, BEP-721, and BEP-1155 tokens. The user can set a specific day of the year for the execution of the will.
 
- | Fantom_test | ------ Deployments ------ |
- | --------------------------------------------- | ------------------------------------------------------------------ |
- | [Contract Address](https://testnet.ftmscan.com/address/0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD#code) | 0xD9C42b0Ed3E2D5142fcf4E53364997ee8908FCeD |
- | [mockTokenAddress](https://testnet.ftmscan.com/address/0xF49705A7362d63178aC0b960d480C59076311dD5#code) | 0xF49705A7362d63178aC0b960d480C59076311dD5 |
+This document explains how to use the "Bquesti" DApp, including the features, user interface, and how to interact with the Binance blockchain.
+## Features
+The "BQuesti" DApp has the following features:
 
-
-## Technologies
-
-This project is built with the following open source libraries, frameworks and languages. User choice of framework used, available in plain js or typescript.
-| Tech | Description |
-| --------------------------------------------- | ------------------------------------------------------------------ |
-| ------ | ------ React Frontend Environment ------ |
-| [Next JS](https://nextjs.org/) | React Framework |
-| ------ | ------ CSS Framework ------ |
-| [Tailwind](https://tailwindcss.com/) | A utility-first CSS framework |
-| ------ | ------ Ethereum Development Environment ------ |
-| [Hardhat](https://hardhat.org/) | Ethereum development environment for professionals |
-| ------ | ------ Included Libraries ------ |
-| [WAGMI](https://wagmi.sh/) | A set of React Hooks for Web3 |
-| [RainbowKit](https://www.rainbowkit.com/docs/introduction) | RainbowKit is a React library that makes it easy to add wallet connection to your dapp. |
-| [ChainlinkAutomation](https://automation.chain.link/) | Automatic Execution service for your smart contracts
+- Register and add legacies: Users can register themselves as testators and add their legacies, including the token type (BEP-20, BEP-721, or BEP-1155), the amount, and the beneficiary's address.
+- Remove legacies: Users can remove their legacies if they change their minds.
+- Schedule the execution day: Users can set a specific day of the year for the will's execution.
+- Get beneficiary legacies: Beneficiaries can view all the legacies they are entitled to receive.
+- Transfer legacy: Upon the testator's death, the DApp automatically transfers the legacies to the beneficiaries according to the will's instructions.
 
 
-## Details
+## Related
 
-Connect your wallet and "Add new beneficiary"
-On the model pop up you will fill in the following
+Here are some related projects
 
-`Token Address` - (token, ERC1155(FTM Version) or FTM NFTs) That you want to send to the beneficiary.
+### Particle Auth + RainbowKit
 
-`Beneficiary` - Set the address of where you want the above asset sent to.  Starts with 0x..
+it involves creating a project in the Particle Dashboard, configuring Web app to access Particle Network's auth and wallet services, and integrating SDKs through RainbowKit to onboard web2 and web3 users, authenticate dApp users, and install a fully functional wallet into the dApp. Additionally, Particle Network's node services can be used to interact with on-chain data and send different transactions to the network by utilizing API-provided endpoints. 
 
-`Amount` - For FTM tokens, set how many tokens.  For ERC721(FTM) set amount to 1
-
-`Token ID`- For tokens it is set to 0.  For ERC1155 and ERC721 tokens, token 1 and above specific to your NFT. 
+[Github Link to Codebase](https://github.com/nwakaku/Bquesti)
 
 
-Upon approving and submitting the beneficiary, you must `check in yearly` to keep the assets in current wallet or the Chainling Automation will execute the transaction
+## Get Started
 
-When you set the beneficiary, an NFT with the details is sent the wallet address letting them know about the details.  When the contract executes or the beneficiary is removed the NFT will be burned.
+To get started with Bquesti, simply follow these steps:
 
-You can remove all beneficiaries with the `remove beneficiaries` button that will clear out beneficiaries and execution data.
+- Clone the repository from GitHub:
+
+```http
+  git clone https://github.com/nwakaku/Bquesti
+
+```
+
+- Install the necessary dependencies:
+
+```bash
+cd app && cd frontend  
+
+yarn 
+```
+
+- Create a project in the Particle Dashboard and get the Api Keys
+
+Visit https://dashboard.particle.network to sign up for an API key.
+## Authors
+
+- [@nwakaku](https://www.github.com/nwakaku)
+
+## BlockChain Deployed
+
+| Name Of Chain             |   Contract Address |
+| ----------------- | ------------------------------------------------------------------ |
+| Binance Blockchain | 0xA89379b27EA065F76CceAec7E3BBc9D77714E1Ca|
 
 
-## To Work on
 
-Drop down options for existing tokens in wallet (Pull wallet assets)
-Give a grace period before execution
-Send a reminder to email/calendar when check in date is coming up
+## Tech Stack
+
+BQuesti is built using the following technologies:
+
+**Client:** NextJs, RainBowKit, TailwindCSS, Particle.Network, Wagmi, 
+
+**Server:** Node, Solidity, Binance Blockchain, ChainlinkAutomation
+
+
+## Usage/Examples
+
+```javascript
+import Component from 'my-project'
+
+function App() {
+  return <Component />
+}
+```
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  cd backend
+  yarn run backend
+```
+
+
+## Support
+
+For support, email Ixuhonline@gmail.com or join our Slack channel.
+
+
+## Roadmap
+
+- Drop down options for existing tokens in wallet (Pull wallet assets) 
+- Give a grace period before execution Send a reminder to email/calendar when check in date is coming up
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_PROJECT_ID`
+
+`NEXT_PUBLIC_CLIENT_KEY`
+
+`NEXT_PUBLIC_APP_ID`
+
+
+## Demo
+
+Insert gif or link to demo
 

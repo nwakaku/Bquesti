@@ -62,7 +62,7 @@ export const Header = () => {
           <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
             <a href="/" class="flex items-center">
               <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white text-yellow-500">
-                BQuest
+                BQuesti
               </span>
             </a>
             <div class="flex items-center lg:order-2">

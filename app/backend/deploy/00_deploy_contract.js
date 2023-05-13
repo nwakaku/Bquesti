@@ -5,11 +5,11 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deployer } = await getNamedAccounts();
 
   // const args = ['Hello!!!!!!!!'];
-  await deploy('Incase', {
+  await deploy('BQuesti', {
     // Learn more about args here: https://www.npmjs.com/package/hardhat-deploy#deploymentsdeploy
    // args: args,
     from: deployer,
     log: true,
   });
 };
-module.exports.tags = ['all', 'Incase'];
+module.exports.tags = ['all', 'BQuesti'];
