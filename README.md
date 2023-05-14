@@ -28,6 +28,10 @@ it involves creating a project in the Particle Dashboard, configuring Web app to
 
 [Github Link to Codebase](https://github.com/nwakaku/Bquesti)
 
+### NodeReal
+
+As a high-speed blockchain infrastructure solution, NodeReal strives to provide an instant and easy-access service to every developer.
+
 
 ## Get Started
 
