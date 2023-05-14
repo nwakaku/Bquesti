@@ -145,17 +145,17 @@ const Footer = () => {
             INXASE
           </a>
           <span class="block text-sm text-center text-gray-500 dark:text-gray-400">
-            © 2021-2022 INXASE™. All Rights Reserved. Built with{" "}
+            © 2022-2023 BQuesti. All Rights Reserved. Built with{" "}
             <a
               href="https://flowbite.com"
-              class="text-purple-600 hover:underline dark:text-purple-500"
+              class="text-green-600 hover:underline dark:text-green-500"
             >
               Flowbite
             </a>{" "}
             and{" "}
             <a
               href="https://tailwindcss.com"
-              class="text-purple-600 hover:underline dark:text-purple-500"
+              class="text-green-600 hover:underline dark:text-green-500"
             >
               Tailwind CSS
             </a>
