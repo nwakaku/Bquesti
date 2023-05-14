@@ -1,59 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import UAuth from "@uauth/js";
+import React from 'react';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
-
-const uauth = new UAuth({
-  clientID: "a46749d6-9bea-4080-b5b6-f1cec0f9af85",
-  redirectUri: "https://incase.vercel.app/dashboard",
-  scope: "openid wallet email profile:optional social:optional",
-});
-
 
 
 export const Header = () => {
 
-    useEffect(() => {
-      // setUserWallet("Login With Unstoppable")
-      uauth
-        .user()
-        .then((user) => {
-          setUserWallet(user.sub);
-          // user exists
-          console.log("User information:", user);
-        })
-        .catch((err) => {
-          console.log(err);
-          // user does not exist
-        });
-    }, []);
-
-    const login = async () => {
-      try {
-        const authorization = await uauth.loginWithPopup();
-        uauth.user().then((user) => {
-          setUserWallet(user.sub);
-          // user exists
-          console.log("User information:", user);
-        });
-        // setUserWallet(authorization.sub)
-        // window.location.reload();
-        console.log(authorization);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-      const [userWallet, setUserWallet] = useState(null);
-
-       const logout = async () => {
-         try {
-           await uauth.logout();
-
-           setUserWallet(null);
-         } catch (error) {
-           console.error(error);
-         }
-       };
 
   return (
     <div>
@@ -131,6 +81,14 @@ export const Header = () => {
                     class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     Check Inherit
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/search"
+                    class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-yellow-400 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  >
+                    Search Txn
                   </a>
                 </li>
                 <li>
