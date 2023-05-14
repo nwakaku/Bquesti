@@ -10,14 +10,14 @@ async function main() {
 */
   
 
-  const Web3 = await hre.ethers.getContractFactory("MockToken");
-  const web3 = await Web3.deploy();
+  // const Web3 = await hre.ethers.getContractFactory("MockToken");
+  // const web3 = await Web3.deploy();
 
-  await web3.deployed();
+  // await web3.deployed();
 
-  console.log("MockToken is deployed to:", web3.address);
-  const receipt = await web3.deployTransaction.wait();
-  console.log("gasUsed:" , receipt.gasUsed);
+  // console.log("MockToken is deployed to:", web3.address);
+  // const receipt = await web3.deployTransaction.wait();
+  // console.log("gasUsed:" , receipt.gasUsed);
 
   
   // const Template = await hre.ethers.getContractFactory("My1155");
@@ -40,12 +40,12 @@ async function main() {
  
 
 
-  const Template = await hre.ethers.getContractFactory("Bquesti");
+  const Template = await hre.ethers.getContractFactory("BQuesti");
   const contract = await Template.deploy();
 
   await contract.deployed();
 
-  console.log("Bquesti Contract deployed to:", contract.address);
+  console.log("BQuesti Contract deployed to:", contract.address);
   const receipt2 = await contract.deployTransaction.wait();
   console.log("gasUsed:" , receipt2.gasUsed);
   

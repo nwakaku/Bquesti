@@ -48,7 +48,7 @@ const addLegacy = (props) => {
             </h2>
             {/* <a href={`https://goerli.etherscan.io/tx/${receipt?.transactionHash}`}> */}
             <a
-              href={`https://testnet.bscscan.com/address/${receipt?.transactionHash}`}
+              href={`https://testnet.bscscan.com/tx/${receipt?.transactionHash}`}
             >
               <button className="text-lg font-semibold bg-gray-200 py-3 px-8 self-start mx-3 border-none rounded-full">
                 {/* View Txn on Etherscan */}

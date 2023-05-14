@@ -7,7 +7,8 @@ require("@nomiclabs/hardhat-ethers");
 const defaultNetwork = "hardhat";
 
 NEXT_PUBLIC_ALCHEMY_ID = "fp2SHb9VlSZ7d3H7B0cBL78PvdZk6ky0";
-PRIVATE_KEY = "abbdc088f548b48e1aa3a8e19d1684b7f02799635932d47f4ade309096585c46";
+PRIVATE_KEY =
+  "";
 const API_KEY = process.env.ETHERSCAN_API_KEY
 
 /**
@@ -22,6 +23,12 @@ module.exports = {
       chainId: 5,
       // url: `https://eth-goerli.alchemyapi.io/v2/${process.env.NEXT_PUBLIC_ALCHEMY_ID}`,
       url: `https://eth-goerli.g.alchemy.com/v2/fp2SHb9VlSZ7d3H7B0cBL78PvdZk6ky0`,
+      accounts: [PRIVATE_KEY],
+    },
+
+    binance_testnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545",
+      chainId: 97,
       accounts: [PRIVATE_KEY],
     },
 
